@@ -1,5 +1,13 @@
 function fibonacci(num) {
-  // type your code here
+  let a = 0;
+  let b = 1;
+  let sum;
+  for(let i = 1; i < num; i++) {
+    sum = a + b;
+    a = b;
+    b = sum;
+  }
+  return sum;
 }
 
 if (require.main === module) {
